@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Music~Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="music-player" id="musicplayer">
+            <nav>
+                <div class="circle">
+                    Music~Player
+                </div>
+                <div class="circle" id="darkmode">
+                    <i class="fa-solid fa-2x fa-moon" id="icon"></i>
+                </div>
+            </nav>
+            <div class="song-menu">
+                
+                <img src="./images/Song1.jpg" class="song-img" id="song-img">
+                
+            </div>
+            <h1 id="song-title">Bijlee Bijlee</h1>
+            <p id= "song-artist">Hardy Sandhu Ft. Palak Tiwari</p>
+            <audio id="song">
+                <source src="./songs/Song1.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+            <div class="controls">
+                <div id="prev"><i class="fa-solid fa-backward" ></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div id="next"><i class="fa-solid fa-forward" ></i></div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
